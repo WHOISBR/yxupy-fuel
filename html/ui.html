@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>by Sencis#3670</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+}
+.water-fill {
+  animation: wave 3s infinite linear, 
+             fill-up 60s ease-out forwards alternate;
+}
+
+@keyframes wave {
+  0% { x: -400px; }
+  100% { x: 0; }
+}
+
+
+@keyframes fill-up {
+  0% {
+    height: 0;
+    y: 160px;
+  }
+  100% {
+    height: 160px;
+    y: 0px;
+  }
+}
+
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+
+button{
+	cursor: pointer;
+	border: 0;
+}
+.btn{
+	background-color:#85166d;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Poppins;
+	font-size:14px;
+	margin-left: -60px;
+	margin-top:  -10px;
+	padding:8px 60px;
+	text-decoration:none;
+
+}
+.btn:hover{
+	background-color: #212121;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	.container {
+		display: none;
+		-webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		position: absolute;
+		width: 1500px;
+		height: 1000px;
+		left: 432px;
+		top: 188px;
+		overflow: visible;
+	}
+	#Gruppe_2 {
+		position: absolute;
+		width: 1500px;
+		height: 1000px;
+		left: -400px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Gruppe_4 {
+		position: absolute;
+		width: 130.322px;
+		height: 41.717px;
+		left: 163.407px;
+		top: 26.141px;
+		overflow: visible;
+	}
+	#Logo {
+		position: absolute;
+		width: 45px;
+		height: 45px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#SCARFACE {
+		left: 80.322px;
+		top: 13.859px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: center;
+		font-family: Metropolis-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1px;
+	}
+	#x {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 409px;
+		top: 18px;
+		overflow: visible;
+	}
+	#scarface_4 {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_4 {
+		position: absolute;
+		overflow: visible;
+		width: 30px;
+		height: 30px;
+		left: 350px;
+		top: 0px;
+	}
+	#x_1 {
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		left: 360px;
+		top: 9px;
+		overflow: visible;
+	}
+	#Gruppe_23 {
+		position: absolute;
+		width: 80px;
+		height: 3px;
+		left: 188px;
+		top: 695px;
+		overflow: visible;
+	}
+	#main {
+		position: absolute;
+		width: 456px;
+		height: 543px;
+		left: 0px;
+		top: 125px;
+		overflow: visible;
+	}
+	#tanken {
+		position: absolute;
+		width: 180px;
+		height: 39px;
+		left: 138px;
+		top: 504px;
+		overflow: visible;
+	}
+	#scarface_4_r {
+		fill: rgb(151, 28, 145);
+	}
+	.scarface_4_r {
+		position: absolute;
+		overflow: visible;
+		width: 180px;
+		height: 39px;
+		left: 0px;
+		top: 0px;
+	}
+	#Tanken_s {
+		left: 64px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(218,218,218,1);
+	}
+	#Gruppe_22 {
+		position: absolute;
+		width: 261px;
+		height: 44px;
+		left: 98px;
+		top: 304px;
+		overflow: visible;
+	}
+	#scarface_15 {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_15 {
+		position: absolute;
+		overflow: visible;
+		width: 261px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#XERO_GAS {
+		left: 30.21px;
+		top: 11.83px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#TANKSTELLE_w {
+		left: 30.21px;
+		top: 24.83px;
+		position: absolute;
+		overflow: visible;
+		width: 54px;
+		white-space: nowrap;
+		line-height: 9.999996185302734px;
+		margin-top: -0.8333330154418945px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8.333330154418945px;
+		color: rgba(133,133,133,1);
+	}
+	#gas-pump-solid_2 {
+		position: absolute;
+		width: 14px;
+		height: 14px;
+		left: 7px;
+		top: 15px;
+		overflow: visible;
+	}
+	#_135 {
+		left: 191.62px;
+		top: 9.856px;
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-family: Metropolis-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#Preis_pro_Liter {
+		left: 192.62px;
+		top: 26.856px;
+		position: absolute;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		line-height: 11.000003814697266px;
+		margin-top: -0.9166669845581055px;
+		text-align: left;
+		font-family: Metropolis-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9.166669845581055px;
+		color: rgba(143,143,143,1);
+	}
+	#scarface_16 {
+		fill: rgb(112, 15, 88);
+	}
+	.scarface_16 {
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		height: 2px;
+		left: 111px;
+		top: 22px;
+	}
+	#Gruppe_22_ {
+		position: absolute;
+		width: 123px;
+		height: 44px;
+		left: 98px;
+		top: 358px;
+		overflow: visible;
+	}
+	#scarface_15_ {
+		fill: rgb(156, 26, 128);
+	}
+	.scarface_15_ {
+		position: absolute;
+		overflow: visible;
+		width: 123px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#ID000L {
+		left: 35.21px;
+		top: 11.83px;
+		position: absolute;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#AUFGEFLLT {
+		left: 35.21px;
+		top: 24.83px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		line-height: 9.999996185302734px;
+		margin-top: -0.8333330154418945px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8.333330154418945px;
+		color: rgba(133,133,133,1);
+	}
+	#Gruppe_22_ba {
+		position: absolute;
+		width: 123px;
+		height: 44px;
+		left: 233px;
+		top: 358px;
+		overflow: visible;
+	}
+	#scarface_15_ba {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_15_ba {
+		position: absolute;
+		overflow: visible;
+		width: 123px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#ID12000L {
+		left: 35.21px;
+		top: 11.83px;
+		position: absolute;
+		overflow: visible;
+		width: 49px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#TANKVOLUMEN {
+		left: 33.21px;
+		top: 24.83px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		line-height: 9.999996185302734px;
+		margin-top: -0.8333330154418945px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8.333330154418945px;
+		color: rgba(133,133,133,1);
+	}
+	#Gruppe_22_bb {
+		position: absolute;
+		width: 123px;
+		height: 44px;
+		left: 98px;
+		top: 413px;
+		overflow: visible;
+	}
+	#scarface_15_bb {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_15_bb {
+		position: absolute;
+		overflow: visible;
+		width: 123px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#ID2321_ {
+		left: 35.21px;
+		top: 11.83px;
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		white-space: nowrap;
+		line-height: 15.000000953674316px;
+		margin-top: -1.2500004768371582px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12.5px;
+		color: rgba(255,255,255,1);
+	}
+	#KOSTEN {
+		left: 33.21px;
+		top: 24.83px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 9.999996185302734px;
+		margin-top: -0.8333330154418945px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8.333330154418945px;
+		color: rgba(133,133,133,1);
+	}
+	#Gruppe_22_bd {
+		position: absolute;
+		width: 57px;
+		height: 44px;
+		left: 230px;
+		top: 413px;
+		overflow: visible;
+	}
+	#scarface_15_be {
+		fill: #e100ff;
+	}
+	.scarface_15_be {
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#BAR {
+		left: 15.21px;
+		top: 15.83px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		line-height: 15.99999713897705px;
+		margin-top: -1.3333334922790527px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.333330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#Gruppe_22_bg {
+		position: absolute;
+		width: 57px;
+		height: 44px;
+		left: 298px;
+		top: 413px;
+		overflow: visible;
+	}
+	#scarface_15_bh {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_15_bh {
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+	#EC {
+		left: 19.21px;
+		top: 15.83px;
+		position: absolute;
+		overflow: visible;
+		width: 18px;
+		white-space: nowrap;
+		line-height: 15.99999713897705px;
+		margin-top: -1.3333334922790527px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.333330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#Gruppe_20 {
+		position: absolute;
+		width: 456px;
+		height: 170px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Gruppe_10 {
+		position: absolute;
+		width: 104.578px;
+		height: 24px;
+		left: 20px;
+		top: 5px;
+		overflow: visible;
+	}
+	#scarface_6 {
+		fill: rgb(117, 22, 97);
+	}
+	.scarface_6 {
+		position: absolute;
+		overflow: visible;
+		width: 2px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Tankvolumen {
+		left: 10.578px;
+		top: 3.059px;
+		position: absolute;
+		overflow: visible;
+		width: 95px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#main_bn {
+		position: absolute;
+		width: 456px;
+		height: 170px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Ebene_4 {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: 158px;
+		top: 14px;
+		overflow: visible;
+	}
+	#Ebene_4_bp {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Clip {
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#AKTUELLES__TANKVOULMEN___52L10 {
+		position: absolute;
+		width: 68px;
+		height: 66px;
+		left: 192.384px;
+		top: 35px;
+		overflow: visible;
+	}
+	#AKTUELLES__TANKVOULMEN___52L10_bs {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -3.200000286102295px;
+		text-align: center;
+		font-family: Metropolis-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 8px;
+		color: rgb(255, 255, 255);
+		letter-spacing: 0.5px;
+	}
+	#Color_Overlay {
+		fill: rgba(199,199,199,1);
+	}
+	.Color_Overlay {
+		overflow: visible;
+		position: absolute;
+		width: 67.08px;
+		height: 64.08px;
+		left: 0.292px;
+		top: 0.408px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Ellipse_2 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(33,33,33,1);
+		stroke-width: 2.0833332538604736px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 170px;
+		height: 170px;
+		left: 143px;
+		top: 0px;
+	}
+	#Rechteck_1 {
+		position: absolute;
+		width: 143px;
+		height: 2px;
+		left: 0px;
+		top: 82px;
+		overflow: visible;
+	}
+	#Rechteck_1_bw {
+		position: absolute;
+		width: 143px;
+		height: 2px;
+		left: 313px;
+		top: 82px;
+		overflow: visible;
+	}
+	#Gruppe_21 {
+		position: absolute;
+		width: 337.3px;
+		height: 137.6px;
+		left: 22px;
+		top: 157px;
+		overflow: visible;
+	}
+	#Gruppe_10_by {
+		position: absolute;
+		width: 37.578px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_6_bz {
+		fill: rgb(158, 47, 161);
+	}
+	.scarface_6_bz {
+		position: absolute;
+		overflow: visible;
+		width: 2px;
+		height: 24px;
+		left: 0px;
+		top: 0px;
+	}
+	#Typ {
+		left: 10.578px;
+		top: 3.059px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		line-height: 17.499996185302734px;
+		margin-top: -1.4583330154418945px;
+		text-align: left;
+		font-family: Metropolis-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14.583330154418945px;
+		color: rgba(255,255,255,1);
+	}
+	#Gruppe_19 {
+		position: absolute;
+		width: 261.6px;
+		height: 91.6px;
+		left: 75.7px;
+		top: 46px;
+		overflow: visible;
+	}
+	#Gruppe_18 {
+		position: absolute;
+		width: 80.6px;
+		height: 91.6px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_14 {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_14_b {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_14_b {
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+	}
+	#Clip_b {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#ID95 {
+		left: 29.6px;
+		top: 35.6px;
+		position: absolute;
+		overflow: visible;
+		width: 52px;
+		white-space: nowrap;
+		line-height: 48.000003814697266px;
+		margin-top: -4.000001907348633px;
+		text-align: left;
+		font-family: Poppins-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#A-95 {
+		left: 41.6px;
+		top: 4.4px;
+		position: absolute;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 16.000003814697266px;
+		margin-top: -1.3333320617675781px;
+		text-align: left;
+		font-family: Poppins-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.33333969116211px;
+		color: rgba(255,255,255,1);
+	}
+	#Gruppe_18_b {
+		position: absolute;
+		width: 80px;
+		height: 91.6px;
+		left: 92px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_14_ca {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_14_cb {
+		fill: rgb(192, 21, 207);
+	}
+	.scarface_14_cb {
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+	}
+	#Clip_cb {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#BZN {
+		left: 0.8px;
+		top: 35.6px;
+		position: absolute;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		line-height: 48.000003814697266px;
+		margin-top: -4.000001907348633px;
+		text-align: left;
+		font-family: Poppins-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#BENZIN {
+		left: 30.4px;
+		top: 4.4px;
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		white-space: nowrap;
+		line-height: 16.000003814697266px;
+		margin-top: -1.3333320617675781px;
+		text-align: left;
+		font-family: Poppins-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.33333969116211px;
+		color: rgba(255,255,255,1);
+	}
+	#Gruppe_18_ce {
+		position: absolute;
+		width: 80px;
+		height: 91.6px;
+		left: 181.6px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_14_cf {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#scarface_14_cg {
+		fill: rgba(33,33,33,1);
+	}
+	.scarface_14_cg {
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+	}
+	#Clip_ch {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#DSL {
+		left: 4.8px;
+		top: 35.6px;
+		position: absolute;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		line-height: 48.000003814697266px;
+		margin-top: -4.000001907348633px;
+		text-align: left;
+		font-family: Poppins-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+	#DIESEL {
+		left: 35.2px;
+		top: 4.4px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		line-height: 16.000003814697266px;
+		margin-top: -1.3333320617675781px;
+		text-align: left;
+		font-family: Poppins-SemiBold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13.33333969116211px;
+		color: rgba(255,255,255,1);
+	}
+#test {
+	z-index: -1;
+    display: block;
+	position: absolute;
+		width: 1200px;
+		height: 1090px;
+		left: -389px;
+		top: 0px;
+	background-image: url("https://cdn.discordapp.com/attachments/926748345597329461/937605759104090122/backgroundgas.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div class="container">
+		<div id="test"></div>
+		
+		<div id="x">
+			<svg class="scarface_4">
+				<rect id="scarface_4" rx="5" ry="5" x="0" y="0" width="30" height="30">
+				</rect>
+			</svg>
+			<img id="x_1" src="https://cdn.discordapp.com/attachments/788240573382787114/853241523399163954/x_1.png">
+				
+		</div>
+			
+		<div id="main">
+			<div id="tanken">
+				<div id="Tanken_s">
+					<button class="btn" onclick="tanken()">
+					<span>Refuel</span>
+					</button>
+				</div>
+			</div>
+			<div id="Gruppe_22">
+				<svg class="scarface_15">
+					<rect id="scarface_15" rx="5" ry="5" x="0" y="0" width="261" height="44">
+					</rect>
+				</svg>
+				<div id="XERO_GAS">
+					<span>XERO GAS</span>
+				</div>
+				<div id="TANKSTELLE_w">
+					<span>TANKSTELLE</span>
+				</div>
+				<img id="gas-pump-solid_2" src="https://cdn.discordapp.com/attachments/788240573382787114/853241584221028352/gas-pump-solid_2.png">
+					
+				<div id="_135">
+					<p id="tankpreis">0.00 $</p>
+				</div>
+				<div id="Preis_pro_Liter">
+					<span>Price per liter</span>
+				</div>
+				<svg class="scarface_16">
+					<rect id="scarface_16" rx="1" ry="1" x="0" y="0" width="60" height="2">
+					</rect>
+				</svg>
+			</div>
+			<div id="Gruppe_22_">
+				<svg class="scarface_15_">
+					<rect id="scarface_15_" rx="5" ry="5" x="0" y="0" width="123" height="44">
+					</rect>
+				</svg>
+				<div id="ID000L">
+					<p id="compfuel" id="value1" class="value1">0.00 L</p>
+				</div>
+				<div id="AUFGEFLLT">
+					<span>Filled</span>
+				</div>
+			</div>
+			<div id="Gruppe_22_ba">
+				<svg class="scarface_15_ba">
+					<rect id="scarface_15_ba" rx="5" ry="5" x="0" y="0" width="123" height="44">
+					</rect>
+				</svg>
+				<div id="ID12000L">
+					<p id="value3" class="value3">100.0L</p>
+				</div>
+				<div id="TANKVOLUMEN">
+					<span>Max Fuel Quantity</span>
+				</div>
+			</div>
+			<div id="Gruppe_22_bb">
+				<svg class="scarface_15_bb">
+					<rect id="scarface_15_bb" rx="5" ry="5" x="0" y="0" width="123" height="44">
+					</rect>
+				</svg>
+				<div id="ID2321_">
+					<p id="price" id="value4" class="value4">0.00 €</p>
+				</div>
+				<div id="KOSTEN">
+					<span>Price</span>
+				</div>
+			</div>
+			<div id="Gruppe_22_bd">
+				<svg class="scarface_15_be">
+					<rect id="scarface_15_be" rx="5" ry="5" x="0" y="0" width="57" height="44">
+					</rect>
+				</svg>
+				<div id="BAR">
+					<span>BAR</span>
+				</div>
+			</div>
+			<div id="Gruppe_22_bg">
+				<svg class="scarface_15_bh">
+					<rect id="scarface_15_bh" rx="5" ry="5" x="0" y="0" width="57" height="44">
+					</rect>
+				</svg>
+				<div id="EC">
+					<span>EC</span>
+				</div>
+			</div>
+			<div id="Gruppe_20">
+				<div id="Gruppe_10">
+					<svg class="scarface_6">
+						<rect id="scarface_6" rx="1" ry="1" x="0" y="0" width="2" height="24">
+						</rect>
+					</svg>
+					<div id="Tankvolumen">
+						<span>Amount of fuel</span>
+					</div>
+				</div>
+				<div id="main_bn">
+					<div id="Ebene_4">
+						<div class="splash">
+				<svg height="160" width="160">
+					<pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+      				<path fill="#e100ff" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+    				</pattern>
+    				<mask id="tankencircle">
+  						<circle cx="70" cy="70" r="70" fill="#ffffff"/>
+  					</mask>
+  					<rect class="water-fill" mask="url(#tankencircle)" fill="url(#water)" x="-400" y="0" width="1600" height="120"/>
+				</svg>	
+					
+				</svg>
+			</div>
+					</div>
+					<div id="AKTUELLES__TANKVOULMEN___52L10">
+						<div id="AKTUELLES__TANKVOULMEN___52L10_bs">
+							<span>Right now </span><br><span>Amount of fuel</span><br><span></span><br><span style="font-size:12px;"></span><br><p id="currentfuel" id="value2" class="value2"style="font-size:12px;"> style="font-size:12px;">52L/100L</p>
+						</div>
+					</div>
+					<svg class="Ellipse_2">
+						<ellipse id="Ellipse_2" rx="85" ry="85" cx="85" cy="85">
+						</ellipse>
+					</svg>
+					<img id="Rechteck_1" src="https://cdn.discordapp.com/attachments/788240573382787114/853241659331969054/Rechteck_1.png">
+						
+					<img id="Rechteck_1_bw" src="https://cdn.discordapp.com/attachments/788240573382787114/853241711865495582/Rechteck_1_bw.png">
+						
+				</div>
+			</div>
+			<div id="Gruppe_21">
+				<div id="Gruppe_10_by">
+					<svg class="scarface_6_bz">
+						<rect id="scarface_6_bz" rx="1" ry="1" x="0" y="0" width="2" height="24">
+						</rect>
+					</svg>
+					<div id="Typ">
+						<span>Fuel Type</span>
+					</div>
+				</div>
+				<div id="Gruppe_19">
+					<div id="Gruppe_18">
+						<div id="scarface_14">
+							<svg class="scarface_14_b">
+								<rect id="scarface_14_b" rx="5" ry="5" x="0" y="0" width="80" height="80">
+								</rect>
+							</svg>
+							<img id="Clip_b" src="https://cdn.discordapp.com/attachments/788240573382787114/853241762293743626/Clip_b.png">
+								
+							</svg>
+						</div>
+						<div id="ID95">
+							<span>98</span>
+						</div>
+						<div id="A-95">
+							<span>E-98</span>
+						</div>
+					</div>
+					<div id="Gruppe_18_b">
+						<div id="scarface_14_ca">
+							<svg class="scarface_14_cb">
+								<rect id="scarface_14_cb" rx="5" ry="5" x="0" y="0" width="80" height="80">
+								</rect>
+							</svg>
+							<img id="Clip_cb" src="https://cdn.discordapp.com/attachments/788240573382787114/853241802386309120/Clip_cb.png">
+								
+							</svg>
+						</div>
+						<div id="BZN">
+							<span>95</span>
+						</div>
+						<div id="BENZIN">
+							<span>Fuel</span>
+						</div>
+					</div>
+					<div id="Gruppe_18_ce">
+						<div id="scarface_14_cf">
+							<svg class="scarface_14_cg">
+								<rect id="scarface_14_cg" rx="5" ry="5" x="0" y="0" width="80" height="80">
+								</rect>
+							</svg>
+							<img id="Clip_ch" src="https://cdn.discordapp.com/attachments/788240573382787114/853241843822362627/Clip_ch.png">
+								
+							</svg>
+						</div>
+						<div id="DSL">
+							<span>DSL</span>
+						</div>
+						<div id="DIESEL">
+							<span>DIESEL</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <script>
+        var clicked = false;
+
+        $(document).ready(function(){
+            window.addEventListener('message', function( event ) {      
+                if (event.data.action == 'open') {
+                    $('.container').css('display', 'block');  
+                } else if (event.data.action == 'price') {
+                    $('#price').html(event.data.price);
+                } else if (event.data.action == 'currentfuel') {
+                    $('#currentfuel').html(event.data.currentfuel + " L");
+                } else if (event.data.action == 'compfuel') {
+                    if(compfuel >= 100) {
+                        tanken();
+                    }
+                    $('#compfuel').html(event.data.compfuel + " L");
+                } else if (event.data.action == 'tankpreis') {
+                    $('#tankpreis').html(event.data.tankpreis + " $");
+                }
+            });
+
+            document.addEventListener('keydown', close);
+            document.addEventListener('keyup', (e) => {
+                if(e.which == 13) {
+                    if(clicked == true) {
+                        tanken();
+                    }
+                }
+            });
+
+            function close(e) {
+                if(e.which == 27 && clicked == false) {
+                    $.post('http://yxupy-fuel/escape', JSON.stringify({}));  
+                    $('.container').css('display', 'none');
+                } else if(e.which == 13) {
+                    if(clicked == false) {
+                        tanken();
+                    }
+                }
+            }
+        });
+        	$('#x').click(function(){
+	            $('.container').css('display', 'none');
+	            $.post('http://yxupy-fuel/escape', JSON.stringify({})); 
+	        })
+
+        function tanken() {
+            if(clicked) {
+            	$('.splash').hide();  
+                clicked = false;
+                $.post('http://yxupy-fuel/unfuel');
+            } else {
+                $('.splash').show();   
+                clicked = true;
+                $.post('http://yxupy-fuel/refuel');
+            }
+        }
+    </script>
+</body>
+</html>
