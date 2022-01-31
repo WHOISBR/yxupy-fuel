@@ -3,6 +3,8 @@
 
 Made by yxupy#1337 and Sencis#3670.
 
+Im not giving any support on this script anymore if there is problems well idk fix it yourself i guess...
+
 Features: Fueling with a ui :D
 
 Dependencies : NONE
