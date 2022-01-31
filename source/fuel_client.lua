@@ -151,7 +151,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
-Citizen.CreateThread(function()
+CreateThread(function()
 	while true do
 		Wait(250)
 
@@ -159,20 +159,11 @@ Citizen.CreateThread(function()
 
 		if pumpDistance < 2.5 then
 			isNearPump = pumpObject
-
-			if Config.UseQBCore then
-				local playerData = QBCore.Functions.GetPlayerData()
-				for i=1, #playerData.accounts, 1 do
-					if playerData.accounts[i].name == 'money' then
-						currentCash = playerData.accounts[i].money
-						break
-					end
-				end
-			end
+			currentCash = QBCore.Functions.GetPlayerData().money['cash']
 		else
 			isNearPump = false
 
-			Citizen.Wait(math.ceil(pumpDistance * 20))
+			Wait(math.ceil(pumpDistance * 20))
 		end
 	end
 end)
