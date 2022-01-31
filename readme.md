@@ -3,7 +3,7 @@
 
 Made by yxupy#1337 and Sencis#3670.
 
-Features: Fueling whit a ui :D
+Features: Fueling with a ui :D
 
 Dependencies : NONE
 
