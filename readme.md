@@ -17,4 +17,4 @@ Converted to QBCore. (yxupy)
 Added a ui (Sencis)
 
 
-![alt text](https://cdn.discordapp.com/attachments/928275630141866044/937609337042501682/unknown.png)
+![alt text](https://cdn.discordapp.com/attachments/926748345597329461/937614040581169202/unknown.png)
