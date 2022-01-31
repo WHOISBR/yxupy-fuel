@@ -1,4 +1,4 @@
-                                                       QBCore Fueling System Whit UI.
+                                                       QBCore Fueling System With UI.
 
 
 Made by yxupy#1337 and Sencis#3670.
