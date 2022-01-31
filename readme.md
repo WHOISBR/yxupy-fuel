@@ -1,7 +1,7 @@
                                                        QBCore Fueling System Whit UI.
 
 
-Made by yxupy and Sencis.
+Made by yxupy#1337 and Sencis#3670.
 
 Features: Fueling whit a ui :D
 
